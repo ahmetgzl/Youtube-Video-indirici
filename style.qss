@@ -1,0 +1,190 @@
+/* Ana renkler */
+QWidget {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 10pt;
+}
+
+QGroupBox {
+    border: 1px solid #3a3a3a;
+    border-radius: 4px;
+    margin-top: 8px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 7px;
+    padding: 0 3px 0 3px;
+}
+
+QGroupBox#info_group, QGroupBox#options_group {
+    max-height: 250px;
+}
+
+QLineEdit, QComboBox, QTimeEdit {
+    padding: 5px;
+    border: 1px solid #3a3a3a;
+    border-radius: 3px;
+    background-color: #2a2a2a;
+    color: #ffffff;
+}
+
+QLineEdit:focus, QComboBox:focus, QTimeEdit:focus {
+    border-color: #4a90e2;
+}
+
+QLabel#info_label, QLabel#playlist_info_label {
+    background-color: #2a2a2a;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+/* Playlist tablo stil güncellemeleri */
+QTableWidget {
+    border: 1px solid #3a3a3a;
+    background-color: #2a2a2a;
+    gridline-color: #3a3a3a;
+}
+
+QTableWidget::item {
+    padding: 5px;
+    border: none;
+}
+
+QTableWidget::item:selected {
+    background-color: #4a90e2;
+}
+
+QHeaderView::section {
+    background-color: #3a3a3a;
+    padding: 5px;
+    border: 1px solid #2a2a2a;
+}
+
+QTableWidget QTableCornerButton::section {
+    background-color: #3a3a3a;
+    border: 1px solid #2a2a2a;
+}
+
+QPushButton {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #5a9ff2;
+}
+
+QPushButton:pressed {
+    background-color: #3a80d2;
+}
+
+QPushButton#select_all_btn, QPushButton#deselect_all_btn {
+    padding: 5px 10px;
+    font-size: 9pt;
+}
+
+QComboBox {
+    padding-right: 20px; /* Make room for the arrow */
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left-width: 1px;
+    border-left-color: #3a3a3a;
+    border-left-style: solid;
+}
+
+QComboBox::down-arrow {
+    image: url(down_arrow.png);
+}
+
+QComboBox QAbstractItemView {
+    border: 1px solid #3a3a3a;
+    background-color: #2a2a2a;
+    selection-background-color: #4a90e2;
+}
+
+QProgressBar {
+    border: none;
+    border-radius: 3px;
+    background-color: #2a2a2a;
+    text-align: center;
+}
+
+QProgressBar::chunk {
+    background-color: #4a90e2;
+    border-radius: 3px;
+}
+
+QListWidget {
+    border: 1px solid #3a3a3a;
+    border-radius: 3px;
+    background-color: #2a2a2a;
+}
+
+QListWidget::item {
+    padding: 5px;
+}
+
+QListWidget::item:selected {
+    background-color: #4a90e2;
+}
+
+QListWidget::item:hover {
+    background-color: #3a80d2;
+}
+
+#copyright_label {
+    color: #888888;
+    font-size: 8pt;
+}
+
+#download_btn {
+    background-color: #4a90e2;
+    font-size: 11pt;
+    padding: 8px 15px;
+}
+
+#download_btn:hover {
+    background-color: #5a9ff2;
+}
+
+/* Control buttons */
+#pause_btn, #resume_btn, #cancel_btn {
+    font-size: 10pt;
+    padding: 5px 10px;
+}
+
+#pause_btn {
+    background-color: #f0ad4e;
+}
+
+#pause_btn:hover {
+    background-color: #ec971f;
+}
+
+#resume_btn {
+    background-color: #5cb85c;
+}
+
+#resume_btn:hover {
+    background-color: #449d44;
+}
+
+#cancel_btn {
+    background-color: #d9534f;
+}
+
+#cancel_btn:hover {
+    background-color: #c9302c;
+}
